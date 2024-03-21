@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- MENU - CABECERA -->
+    <header id="header">
+        <div class="menu">
+            <a class="logo-btn" href="#">
+                <img src="img/logo.svg" class="logo" alt="">
+            </a>
+
+            <div class="lista-menu" id="items">
+                <ul class="lista-ul">
+                    <li class="item"><a class="li-link" href="#inicio">Inicio</a></li>
+                    <li class="item"><a class="li-link" href="#reserva">Inscripción</a></li>
+                    <li class="item"><a class="li-link" href="#cursos">Cursos</a></li>
+                    <li class="item"><a class="li-link" href="#eventos">Eventos</a></li>
+                    <li class="item"><a class="li-link" href="#contacto">Contacto</a></li>
+                    <li class="btn"><a class="li-link" href="https://drive.google.com/drive/u/0/home">Área
+                            Estudiantil</a></li>
+                </ul>
+            </div>
+            <a class="btnHamburguesa" id="btn-hamburguesa">
+                <img src="img/menu.png" alt="">
+                <span></span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section id="inicio">
+            <div class="container" id="inicio-overley">
+                
+                    <div class="column">
+                        <div class="logo">
+                            <img src="./img/logo.svg.2024_03_19_13_37_41.0.svg" alt="">
+                        </div>
+                        <div class="column">
+                            <div class="slogan">
+                                19 años formando profesionales
+                            </div>
+        
+                        </div>
+                </div>
+                
+                
+
+            </div>
+        </section>
+        <section id="reserva">
+            <div class="contenido">
+                <div class="formulario-container">
+                    <form action="" class="formulario">
+                        <h2>RESERVA TU LUGAR!</h2>
+                        <div class="input-group">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" class="input-field">
+                        </div>
+                        <div class="input-group">
+                            <label for="curso-select">Curso:</label>
+                            <select name="cursos" id="curso-select" class="input-field">
+                                <option value="">Selecciona...</option>
+                                <option value="Guitarra Acústica">Guitarra Acústica</option>
+                                <option value="Guitarra Eléctrica">Guitarra Eléctrica</option>
+                                <option value="Canto">Canto</option>
+                                <option value="Piano">Piano</option>
+                                <option value="Bajo">Bajo</option>
+                                <option value="Batería">Batería</option>
+                            </select>
+                        </div>
+                        <button type="button" onclick="sendwhatsapp()" class="submit-button">Enviar!</button>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section id="cursos">
+            <div>Cursos</div>
+        </section>
+        <section id="eventos">
+            <div>Eventos</div>
+        </section>
+        <section id="contacto">
+            <div>Contacto</div>
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="container_footer">
+            <div class="box_footer">
+                <div class="logo">
+                    <img src="img/logo.svg" class="logo" alt="">
+                </div>
+                <div class="terms">
+                    <p>19 años formando profesionales</p>
+                </div>
+            </div>
+            <div class="box_footer">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Sobre Nosotros</a>
+                <a href="#cursos">Cursos</a>
+                <a href="#eventos">Eventos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="box_footer">
+                <a href=""><i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#nosotros"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+        </div>
+        <div class="box_copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2024
+                <b>Salados</b>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>
