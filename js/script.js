@@ -73,7 +73,6 @@ document.addEventListener("DOMContentLoaded", function() {
     
         inicio.style.backgroundPositionY = -scrollPosition * 0.5 + 'px';
         header.style.backgroundPositionY = 2 + - 4 + 'rem';
-        header.style.opacity = '0.8';
         // Si el scroll está en la parte superior, ajustar la posición del fondo del header
         if (scrollPosition === 0) {
             header.style.backgroundPositionY = - 4 + 'rem';
@@ -90,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function sendwhatsapp() {
     var numero = "+598099653200";
 
-    var name = document.querySelector('.name').value;
+    var name = document.querySelector('#name').value;
     var curso = document.querySelector('#curso-select').value;
 
     var url = "https://wa.me/" + numero + "?text="

@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link rel="stylesheet" href="css/styles.css">
-
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -19,12 +16,11 @@
             <a class="logo-btn" href="#">
                 <img src="img/logo.svg" class="logo" alt="">
             </a>
-
             <div class="lista-menu" id="items">
                 <ul class="lista-ul">
                     <li class="item"><a class="li-link" href="#inicio">Inicio</a></li>
                     <li class="item"><a class="li-link" href="#reserva">Inscripción</a></li>
-                    <li class="item"><a class="li-link" href="#cursos">Cursos</a></li>
+                    <li class="item"><a class="li-link" href="#galeria">Galería</a></li>
                     <li class="item"><a class="li-link" href="#eventos">Eventos</a></li>
                     <li class="item"><a class="li-link" href="#contacto">Contacto</a></li>
                     <li class="btn"><a class="li-link" href="https://drive.google.com/drive/u/0/home">Área
@@ -40,64 +36,80 @@
     <main>
         <section id="inicio">
             <div class="container" id="inicio-overley">
-                
+                <div class="column">
+                    <div class="logo">
+                        <img src="./img/logo.svg.2024_03_19_13_37_41.0.svg" alt="">
+                    </div>
                     <div class="column">
-                        <div class="logo">
-                            <img src="./img/logo.svg.2024_03_19_13_37_41.0.svg" alt="">
+                        <div class="slogan">
+                            19 años formando profesionales
                         </div>
-                        <div class="column">
-                            <div class="slogan">
-                                19 años formando profesionales
-                            </div>
-        
-                        </div>
+                    </div>
                 </div>
-                
-                
-
             </div>
         </section>
+
         <section id="reserva">
-            <div class="contenido">
-                <div class="formulario-container">
-                    <form action="" class="formulario">
-                        <h2>RESERVA TU LUGAR!</h2>
-                        <div class="input-group">
-                            <label for="name">Nombre:</label>
-                            <input type="text" id="name" name="name" class="input-field">
-                        </div>
-                        <div class="input-group">
-                            <label for="curso-select">Curso:</label>
-                            <select name="cursos" id="curso-select" class="input-field">
-                                <option value="">Selecciona...</option>
-                                <option value="Guitarra Acústica">Guitarra Acústica</option>
-                                <option value="Guitarra Eléctrica">Guitarra Eléctrica</option>
-                                <option value="Canto">Canto</option>
-                                <option value="Piano">Piano</option>
-                                <option value="Bajo">Bajo</option>
-                                <option value="Batería">Batería</option>
-                            </select>
-                        </div>
-                        <button type="button" onclick="sendwhatsapp()" class="submit-button">Enviar!</button>
-                    </form>
+
+                    <div class="formularioReserva">
+                        <form action="" class="formularioR">
+                            <h2>RESERVA TU LUGAR!</h2>
+                            <div class="input-group">
+                                <input type="text" id="name" placeholder="Nombre" name="name" class="input-field">
+                            </div>
+                            <div class="input-group">
+                                <select name="cursos" id="curso-select" class="input-field">
+                                    <option value="">Curso</option>
+                                    <option value="Guitarra Acústica">Guitarra Acústica</option>
+                                    <option value="Guitarra Eléctrica">Guitarra Eléctrica</option>
+                                    <option value="Canto">Canto</option>
+                                    <option value="Piano">Piano</option>
+                                    <option value="Bajo">Bajo</option>
+                                    <option value="Batería">Batería</option>
+                                </select>
+                            </div>
+                            <button type="button" onclick="sendwhatsapp()" class="submit-button">Enviar!</button>
+                        </form>
+                    </div>
+            
+        </section>
+
+        <div class="espacio1">
+
+        </div>
+
+        <section id="galeria">
+
+                <h2>Vení a conocer!</h2>
+            <div class="contenidoGaleria">
+                <div class="box">
+                    <img src="img/Galería/img1.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="img/Galería/img5.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="img/Galería/img3.jpg" alt="">
+                </div>
+                <div class="box">
+                    <img src="img/Galería/img2.jpg" alt="">
                 </div>
             </div>
+            <div class="submitGaleria">
+                <button type="button" onclick="sendwhatsapp2()">Quiero conocer!</button>
+            </div>
+            
+            
             
         </section>
         
-        <section id="cursos">
-            <div>Cursos</div>
-        </section>
+
         <section id="eventos">
             <div>Eventos</div>
         </section>
         <section id="contacto">
             <div>Contacto</div>
         </section>
-
-
-
-
     </main>
 
     <footer>
@@ -131,9 +143,5 @@
     </footer>
 
     <script src="js/script.js"></script>
-
-
-
 </body>
-
 </html>

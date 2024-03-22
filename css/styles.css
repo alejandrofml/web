@@ -135,12 +135,6 @@ main {
     position: static;
 }
 
-main section {
-    height: 500px;
-
-}
-
-
 
 
 #inicio {
@@ -155,9 +149,6 @@ main section {
 }
 
 .container  {
-    background-image: url(../img/uno.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     display: flex;
@@ -202,57 +193,60 @@ main section {
 
 }
 
-
-
+/* Estilos generales */
 #reserva {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #d7dbe1;
+    
+    max-width: 1500px;
+    width: 100%;
+    height: 50vh;
 }
 
-.formulario-container {
-    background-color: green;
-    border-radius: 10px;
+
+
+.formularioReserva {
+    flex: 1;
     padding: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-.formulario {
+.formularioR {
     max-width: 400px;
     margin: 0 auto;
 }
 
-h2 {
+.formularioR h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    color: #d7dbe1;
 }
 
 .input-group {
     margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+.label {
+    font-weight: bold;
+    color: #555;
 }
 
 .input-field {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .submit-button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
     background-color: #FF9F00;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -261,17 +255,75 @@ label {
     background-color: #FFC200;
 }
 
-
-#cursos {
-    background-color: green;
+/* Estilos generales */
+#galeria {
+    background-image: url(../img/reserva1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+/* Estilos del título */
+#galeria h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos de la galería de fotos */
+.contenidoGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contenidoGaleria :nth-of-type(1),
+.contenidoGaleria :nth-of-type(4){
+    grid-column-start: span 2;
+}
+
+.contenidoGaleria .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contenidoGaleria .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos del botón */
+.submitGaleria {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.submitGaleria button {
+    background-color: white;
+    padding: 10px 20px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submitGaleria button:hover {
+    background-color: #f0f0f0;
+}
+
 
 #eventos {
     background-color: violet;
 }
 
 #contacto {
-    background-color: #ffffff;
 }
 
 footer {
