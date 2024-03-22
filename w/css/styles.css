@@ -1,0 +1,449 @@
+/* Estilos generales */
+* {
+    list-style: none;
+    /* Remove default bullet points from lists */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    font-family: Arial, sans-serif;
+    /* Default font family */
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Signika Negative', sans-serif;
+    background-color: #f5f5f5;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+
+
+header {
+    width: 100%;
+    background-image: url(../img/headerFondo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu {
+    max-width: 1500px;
+    padding: 0 5%;
+    margin: 0 auto 0;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1001;
+}
+
+
+
+.menu .logo-btn {}
+
+.menu .logo-btn img {
+    height: 50px;
+}
+
+.menu .btnHamburguesa {
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu .btnHamburguesa img {
+    height: 25px;
+}
+
+.menu .btnHamburguesa span {
+    height: 2px;
+    display: block;
+    background-color: #000;
+    width: 25px;
+    border-radius: 20px;
+}
+
+.menu .btnHamburguesa span :nth-child(2) {
+    margin: .4rem 0;
+}
+
+
+.menu .lista-menu {
+    width: 55%;
+}
+
+.menu .lista-menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.menu .lista-menu .lista-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .lista-menu .lista-ul .item {}
+
+.menu .lista-menu .lista-ul .btn {}
+
+.menu .lista-menu .lista-ul .item .li-link,
+.menu .lista-menu .lista-ul .btn .li-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    transition: 0.3s linear;
+    padding: 1.8rem 0;
+    display: inline-block;
+}
+
+.menu .lista-menu .lista-ul .btn .li-link {
+    padding: 15px 15px;
+    border-radius: 20px;
+    background-color: #000;
+    color: white;
+}
+
+.menu a,
+.menu .lista-menu .lista-ul .item a,
+.menu .lista-menu .lista-ul .btn a {
+    text-decoration: none;
+}
+
+/* HOVER */
+.menu .lista-menu .lista-ul .item :hover {
+    color: #d92626;
+}
+
+.menu .lista-menu .lista-ul .btn :hover {
+    background-color: #d92626;
+}
+
+
+main {
+    position: static;
+}
+
+
+
+#inicio {
+    background-image: url(../img/Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container  {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+}
+
+.logo img{
+    filter: invert(0.9);
+    width: 550px;
+}
+
+
+.slogan {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+    color: #d7dbe1 ;
+    letter-spacing: 1px;
+}
+
+#inicio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+/* Estilos generales */
+#reserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 1500px;
+    width: 100%;
+    height: 50vh;
+}
+
+
+
+.formularioReserva {
+    flex: 1;
+    padding: 20px;
+}
+
+.formularioR {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.formularioR h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d7dbe1;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: bold;
+    color: #555;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF9F00;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #FFC200;
+}
+
+/* Estilos generales */
+#galeria {
+    background-image: url(../img/reserva1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilos del título */
+#galeria h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos de la galería de fotos */
+.contenidoGaleria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contenidoGaleria :nth-of-type(1),
+.contenidoGaleria :nth-of-type(4){
+    grid-column-start: span 2;
+}
+
+.contenidoGaleria .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contenidoGaleria .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos del botón */
+.submitGaleria {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.submitGaleria button {
+    background-color: white;
+    padding: 10px 20px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submitGaleria button:hover {
+    background-color: #f0f0f0;
+}
+
+
+#eventos {
+    background-color: violet;
+}
+
+#contacto {
+}
+
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../img/footerBG.svg);
+    background-size: cover;
+}
+
+.container_footer {
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box_footer {
+    flex: 1 1 300px; /* Ajusta el ancho de las columnas */
+    padding: 4px;
+    text-align: center;
+    align-items: center;
+}
+
+.box_footer .logo img {
+    width: 100px;
+    filter: invert(1);
+}
+
+.box_footer .terms {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box_footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box_footer ul li {
+    margin-bottom: 10px;
+}
+
+.box_footer a {
+    color: #7a7a7a;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.box_footer a:hover {
+    opacity: 0.8;
+}
+
+.box_footer a .fab {
+    font-size: 20px;
+}
+
+.box_copyright {
+    width: 100%;
+    text-align: center;
+    padding: 0 40px;
+    margin-top: 50px; /* Ajusta según sea necesario */
+}
+
+.box_copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box_copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+
+@media screen and (max-width: 980px) {
+
+    .menu .btnHamburguesa {
+        display: block;
+    }
+
+    header {}
+
+    .menu .lista-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: .3s linear;
+        padding: 0 3rem;
+    }
+
+    .menu .lista-menu .lista-ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu .lista-menu .lista-ul .li-link {
+        padding: 1rem 0;
+    }
+
+    #items.viewMenu {
+        transform: scaleY(1);
+    }
+
+
+    #inicio {
+        margin-top: 0px;
+    }
+
+    .footer-column {
+        flex: 1 1 50%;
+        max-width: 50%;
+    }
+}
